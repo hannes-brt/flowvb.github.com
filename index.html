@@ -10,20 +10,20 @@
 	<style type="text/css">
 		body {
   		margin-top: 1.0em;
-  		background-color: #703a42;
+  		background-color: #c2ebff;
 		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #ffffff;
+  		color: #101010;
     }
     #container {
       margin: 0 auto;
       width: 700px;
     }
-		h1 { font-size: 3.8em; color: #8fc5bd; margin-bottom: 3px; }
+		h1 { font-size: 3.8em; color: #1010101; margin-bottom: 3px; }
 		h1 .small { font-size: 0.4em; }
 		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #8fc5bd; }
-    h3 { text-align: center; color: #8fc5bd; }
-    a { color: #8fc5bd; }
+		h2 { font-size: 1.5em; color: #1010101; }
+    h3 { text-align: center; color: #101010; }
+    a { color: #101010; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
 		pre { background: #000; color: #fff; padding: 15px;}
@@ -52,10 +52,50 @@
       Gating Flow Cytometry Data with Variational Bayes
     </div>
 
+    <h2>About</h2> 
+    <p>
+      FlowVB is an algorithm for the clustering of flow cytometry
+      data. It uses a mixture of Student-t distributions which are fit
+      using variational Bayes. Our algorithm is based on Archambeau &
+      Verleysen
+      2006, <a href="http://www.sciencedirect.com/science/article/pii/S0893608006001791">"Robust
+      Bayesian Clustering"</a>. FlowVB was presented at
+      the <a href="http://flowcap.flowsite.org/summit2010.html">FlowCAP
+      I Summit 2010</a> on September 21, 2010. Please read
+      the <a href="FlowVB-abstract.pdf">abstract</a>
+      and <a href="flowcap-presentation-bethesda-2010-09-21.pdf">presentation</a>.      
+    </p>
+    
+    <p>
+      For FlowCAP I we used a prototype implementation in MATLAB. You
+      may <a href="FlowVB.zip">download</a> the MATLAB implementation,
+      but please be advised that this is untested software and will
+      not be further developed.
+    </p>
+    
+    <p>
+      We are reimplementing the algorithm in Python and are adding
+      more features. Currently this project is in early alpha mode,
+      but already functional. Abobe you may download the
+      source. Minimum requirements to run FlowVB are:
+      <ul>
+	<li>Python 2.6.5</li>
+	<li>Numpy 1.4.0</li>
+	<li>Scipy 0.8.0b1</li>
+	<li>Matplotlib 0.99.3</li>
+	<li>Enthought Traits API 3.4.0</li>
+	<li>Cython 0.12.1</li>
+	<li>A C-compiler</li>
+	</ul>
+    </p>
+
     <h2>Authors</h2>
-<p>Hannes Bretschneider (habretschneider@gmail.com)<br/><br/>      </p>
+<p>Hannes Bretschneider<br/>
+  Andrew Roth<br/>      </p>
 <h2>Contact</h2>
-<p>FlowVB (FlowVB.help@gmail.com)<br/>      </p>
+<p>FlowVB (<script type="text/javascript">document.write(
+"SybjIO\056uryc\100tznvy\056pbz".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+</script>)<br/>      </p>
 
 
     <h2>Download</h2>
